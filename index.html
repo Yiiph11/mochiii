@@ -151,13 +151,13 @@
         <h2 id="final-title"></h2>
         <p id="final-message"></p>
         <p style="margin:10px 0;">🧼 Higiene: <span id="final-hygiene">50</span>/100</p>
-        <button onclick="window.AppInventor.setWebViewStringChange('backToHome');">🏠 Volver al inicio</button>
+        
     </div>
 
     <div id="ui-layer">
         <div class="top-bar">
             <div class="tag glass" id="chapter-tag">Cap 1 · Acto 1</div>
-            <button class="home-btn" onclick="window.AppInventor.setWebViewString('backToHome');" title="Volver">🏠</button>
+            
             <div class="badge glass">🧼 <span id="completed-count">0</span>/21</div>
         </div>
         <div class="fact-bubble glass" id="fact-box">💡 <span id="fact-text"></span></div>
@@ -654,13 +654,13 @@
         let title, msg;
         if (hygieneScore >= 80) {
             title = '🌟 ¡Mochhichi Súper Higiénico!';
-            msg = '¡Eres un experto en higiene personal! Tu rutina es impecable y tu salud te lo agradece.';
+            msg = '¡Eres un experto en higiene personal! Tu rutina es impecable y tu salud te lo agradece. Hazle click a "volver al menu" para volver';
         } else if (hygieneScore >= 50) {
             title = '👍 Buen trabajo, Mochhichi';
-            msg = 'Tienes buenos hábitos, pero aún puedes mejorar algunos aspectos. ¡Sigue aprendiendo!';
+            msg = 'Tienes buenos hábitos, pero aún puedes mejorar algunos aspectos. ¡Sigue aprendiendo!. Hazle click a "volver al menu" para volver';
         } else {
             title = '😟 Mochhichi necesita mejorar';
-            msg = 'Tu higiene personal tiene carencias importantes. Revisa los consejos y cuida tu salud.';
+            msg = 'Tu higiene personal tiene carencias importantes. Revisa los consejos y cuida tu salud. Hazle click a "volver al menu" para volver';
         }
         domFinalTitle.textContent = title;
         domFinalMsg.textContent = msg;
